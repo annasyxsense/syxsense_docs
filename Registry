@@ -25,6 +25,7 @@ cmd /c reg export "HKEY_USERS" "C:\hkey.reg"
 
 Command to see if there is any corrupted windows components:
 cmd /c DISM /Online /Cleanup-Image /Scanhealth > c:\$VcmsTemp$\logs\dismhealth.log
+FYI - the process can last around 15 mins, so please while it checks everything 
 
 
 cmd /c reg export "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing" "C:\$Vcmstemp$\Zendesk_Ticket_17226_Component_Based_Servicing_23Jan2020.reg"
