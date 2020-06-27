@@ -1,0 +1,15 @@
+In order to forward ticket to Content team,follow these steps.
+
+1. Ask customer to try to install patch manually from Downloadfolder
+If installation was successful, but in console it failed:
+
+2. Grab export registry files, to do this, go to: 
+Process Viewer, enter the following commands, with corresponding descriptions into Process Viewer field. 
+
+cmd /c reg export "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" "C:\$Vcmstemp$\Zendesk_Ticket_18815_Windows_NT_CurrentVersion.reg"
+
+cmd /c reg export HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\SideBySide\Winners "C:\$Vcmstemp$\Zendesk_Ticket_18815_Windows_CurrentVersion_SidebySide_Winners.reg"
+
+Untick "Allow user interaction" (Run on desktop) - this hides the initial process. 
+
+Click Run
