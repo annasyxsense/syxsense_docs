@@ -1,0 +1,11 @@
+Removing agent with an option "Archive leave in database for historical purposes"
+
+User should wait for around 20 -30 mins to remove an agent on a device.
+The device entry will be removed immediately.
+
+During removing process user can see the 3 proceses Msi Installer running in Task manager, they won't allow to launch the installation process again. 
+User may experience an error, trying to reinstall an agent before removal process ends:
+
+Another installation is in progress. You must complete that installation before continuing this one. 
+
+Some customers may have issues using Vrep_Responder_Cleaner.msi - files are not deleted, to resolve this just send them CleanUp tool, which is used by Test Team.
