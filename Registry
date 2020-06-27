@@ -22,3 +22,10 @@ To export them:
 cmd /c reg export "HKEY_USERS\S-1-5-21-3884730205-1340584569-2937958712-2647\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall" "C:\$Vcmstemp$\Zendesk_us21.reg"
 cmd /c reg export "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall" "C:\$Vcmstemp$\Zendesk_Uninstall.reg"
 cmd /c reg export "HKEY_USERS" "C:\hkey.reg"
+
+Command to see if there is any corrupted windows components:
+cmd /c DISM /Online /Cleanup-Image /Scanhealth > c:\$VcmsTemp$\logs\dismhealth.log
+
+
+cmd /c reg export "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing" "C:\$Vcmstemp$\Zendesk_Ticket_17226_Component_Based_Servicing_23Jan2020.reg"
+cmd /c reg export "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate" "C:\$Vcmstemp$\Zendesk_Ticket_17226_Windows_Update_23Jan2020.reg"
