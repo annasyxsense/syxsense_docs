@@ -1,11 +1,38 @@
-Removing agent with an option "Archive leave in database for historical purposes"
 
-User should wait for around 20 -30 mins to remove an agent on a device.
+Please follow these steps to uninstall the agent from the machine:
+
+1. Unzip Cleaner
+
+2. Run Command line as Administrator
+
+3. Go to the folder in command line where this tool is located
+
+4. Run the stated command:
+
+
+msiexec /i Syxsense_VRep_Responder_Cleaner.msi /qn
+
+
+
+The tool runs silently, so you will not see any progress. The removal process can run up to 15 mins. 
+
+
+Vrep_Responder_Cleaner.msi can be downloaded from our Onedrive:
+https://syxsense-my.sharepoint.com/:u:/p/anna/EQC_SaW8PsVMrYSp4wxe4iQBTTGTxqYUxXuxCuE2u-YjVA?e=ksl8gh
+
+
+Link to download the latest CleanUp tool:
+https://syxsense-my.sharepoint.com/:u:/p/anna/EYGJ0vkRVw9DhIYLnJm2n2wBlS6G6CwXWhYQRfzu_929MA?e=mbdIFu
+
+
+
+Removing agent with an option "Archive leave in database for historical purposes" user may experience an error, trying to reinstall an agent before removal process ends:
+
+"Another installation is in progress. You must complete that installation before continuing this one"
+
+User should wait for around 20 - 30 mins to remove an agent on a device.
 The device entry will be removed immediately.
 
-During removing process user can see the 3 proceses Msi Installer running in Task manager, they won't allow to launch the installation process again. 
-User may experience an error, trying to reinstall an agent before removal process ends:
-
-Another installation is in progress. You must complete that installation before continuing this one. 
+During removing process user can see 3 proceses Msi Installer running in Task manager, they won't allow to launch the installation process again. 
 
 Some customers may have issues using Vrep_Responder_Cleaner.msi - files are not deleted, to resolve this just send them CleanUp tool, which is used by Test Team.
