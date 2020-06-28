@@ -38,3 +38,5 @@ The device entry will be removed immediately.
 During removing process user can see 3 proceses Msi Installer running in Task manager, they won't allow to launch the installation process again. 
 
 Some customers may have issues using Vrep_Responder_Cleaner.msi - files are not deleted, to resolve this just send them CleanUp tool, which is used by Test Team.
+
+
