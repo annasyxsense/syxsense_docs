@@ -69,3 +69,4 @@ These commands can be useful:
 touch /path/file - creates file in in specified directory
 locale -a - display the available locales
 locale-gen fr_FR.UTF-8 - if locale doesn't appear in list, it should be installed additionally
+dpkg -l - returns the list of all packages
