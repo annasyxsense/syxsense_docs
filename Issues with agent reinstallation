@@ -26,6 +26,8 @@ https://syxsense-my.sharepoint.com/:u:/p/anna/EYGJ0vkRVw9DhIYLnJm2n2wBlS6G6CwXWh
 
 
 
+
+
 Removing agent with an option "Archive leave in database for historical purposes" user may experience an error, trying to reinstall an agent before removal process ends:
 
 "Another installation is in progress. You must complete that installation before continuing this one"
