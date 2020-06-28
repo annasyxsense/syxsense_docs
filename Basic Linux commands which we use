@@ -63,3 +63,9 @@ df - report file system disk space usage
 echo xxxxxx | sudo tee /etc/verismic
 shutdown -r now (for reboot tasks) - reboots the device
 who -b
+
+UBUNTU
+These commands can be useful:
+touch /path/file - creates file in in specified directory
+locale -a - display the available locales
+locale-gen fr_FR.UTF-8 - if locale doesn't appear in list, it should be installed additionally
