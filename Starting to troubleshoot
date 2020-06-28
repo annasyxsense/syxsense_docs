@@ -1,0 +1,13 @@
+Starting to troubleshoot it is needed to gather following information to seel overall picture
+
+1. Time when incident happened.
+2. Task number - how many machines in tasks have an issue/ total number of devices
+3. Machines names, which were included
+4. Agent version installed
+5. Has device Vrep or has not
+
+1. Review configuration of tasks.
+2. Switches for Software deploy.
+3. Try to re-run task to check whether the issue persists.
+
+
