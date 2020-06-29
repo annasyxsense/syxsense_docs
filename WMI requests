@@ -1,5 +1,12 @@
+
+
+
 Some basic WMI requests which could be used in WMI explorer:
 
 Select * from win32_quickfixengineering - returns list of Updates installed on a PC
 Select * from win32_product - returns list of software installed
 ... win32_computersystem -returns data for ComputerSystem table in Inventory
+
+
+
+
