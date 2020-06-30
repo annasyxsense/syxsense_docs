@@ -28,6 +28,10 @@ dmidecode | grep -A3 '^System Information'
 ip addr show
 cat /proc/version
 
+systemctl status sshd - checks the stae of ssh,  if the port was not open, you would see: No route to host
+firewall-cmd --list-all - to check the current active zones and their open ports and services.
+
+
 REDHAT/Oracle 6
 lsb_release -a
 locale
