@@ -1,5 +1,9 @@
 
 
+One question is why do “superseding” patches have a CVSS Severity of NA and Severity of NA?
+
+Surely the Superseded patches should have that and the new patches should have the correct severity levels?
+
 
 The cumulative updates that are released on Patch Tuesday typically have a Microsoft Severity and CVSS severity of Critical but when a cumulative update is 
 published outside of Patch Tuesday, it has no vulnerability rating.
