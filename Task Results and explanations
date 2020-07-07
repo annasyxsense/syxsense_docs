@@ -1,0 +1,54 @@
+
+Another installation is already in progress
+     Another software is already running on the device and only one can run at a time.
+     
+Attempting to connect
+     In the process of connecting to the device
+
+All patches failed to install
+     All the patches you attempted to deploy failed on the device, it may appear if all patches were skipped due to supersedence. 
+     
+Device mismatch
+     The device you targeted doesn't match the device in the console
+     
+Failed to connect
+     Generic message indicating that we could not connect to the device
+     
+Lost connection
+     Server/vRep lost the connection the device
+     
+ Not enough disk space
+     Low disk space
+     
+Offline
+     Unable to get to the device at all so we believe it is turned off or not connected to any network 
+     
+ Stack Overflow
+     Code just kept calling itself in a loop over and over again
+     
+Target device disconnected or conn
+     Same as lost connection but most likely the device notified the server that it was shutting down
+
+TaskResult_-532462766 - .Net Framework compiler is corrupted, the repair tool can be downloaded from https://www.microsoft.com/en-us/download/details.aspx?id=30135
+
+Task result_-1073741502
+    {DLL Initialization Failed} Initialization of the dynamic link library %hs failed. The process is terminating abnormally.
+    
+TaskResult-1073741571 - the process of patch scanning was terminated before it finished, device could run out of memory.
+
+TaskResult_-2146232000 - the agent may have difficulty establishing SSL connection to the cloud
+
+TaskResult_-2147024784
+    ERROR_DISK_FULL
+    
+The wait operation timed out.
+       We were waiting for a command to run and eventually we gave up waiting for it to finish. 
+       
+Timeout waiting for connection
+       Tried to connect to the device but ultimately we couldn't connect and so we timed out.
+       
+Timeout waiting for the device after reboot
+       We rebooted the device however it never came back online and we never reconnected.
+       
+Unable to connect potential firewall or non windows pc
+      Some device responded however we couldn't connect to it, it could be linux or device with a firewall.

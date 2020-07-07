@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Some useful Registry keys</title>
+</head>
+<body>
+Find device id on a machine:
+
+HKLM\Software\Verismic\PowerManager\DeviceID
+
+Gathering inventory from:
+
+HKEY_USERS\.DEFAULT\
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall
+HKEY_USERS\S-1-5-19\...
+HKEY_USERS\S-1-5-20\
+HKEY_USERS\S-1-5-21-3884730205-1340584569-2937958712-2647\
+HKEY_USERS\S-1-5-80-1549978933-2891762758-2075524219-3728768389-1145206490\
+HKEY_USERS\S-1-5-80-1625532266-625503396-2441596095-4129757946-3375356652\
+HKEY_USERS\S-1-5-80-2652535364-2169709536-2857650723-2622804123-1107741775\
+HKEY_USERS\S-1-5-80-2872255330-672591203-888807865-2791174282-1554802921\
+HKEY_USERS\S-1-5-80-2885764129-887777008-271615777-1616004480-2722851051\
+HKEY_USERS\S-1-5-80-3263513310-3392720605-1798839546-683002060-3227631582\
+HKEY_USERS\S-1-5-80-3477044410-376262199-2110164357-2030828471-4165405235\...
+
+To export them:
+cmd /c reg export "HKEY_USERS\S-1-5-21-3884730205-1340584569-2937958712-2647\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall" "C:\$Vcmstemp$\Zendesk_us21.reg"
+cmd /c reg export "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall" "C:\$Vcmstemp$\Zendesk_Uninstall.reg"
+cmd /c reg export "HKEY_USERS" "C:\hkey.reg"
+
+Command to see if there is any corrupted windows components:
+cmd /c DISM /Online /Cleanup-Image /Scanhealth > c:\$VcmsTemp$\logs\dismhealth.log
+FYI - the process can last around 15 mins, so please while it checks everything 
+
+cmd /c del "C:\$Vcmstemp$\Logs\*.*" /F /Q - to clear all data in logs
+
+
+cmd /c reg export "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing" "C:\$Vcmstemp$\Zendesk_Ticket_17226_Component_Based_Servicing_23Jan2020.reg"
+cmd /c reg export "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate" "C:\$Vcmstemp$\Zendesk_Ticket_17226_Windows_Update_23Jan2020.reg"
+</body>
+</html>

@@ -1,0 +1,426 @@
+<html>
+<title>
+      Errors while installing Windows 10
+    </title>
+ 
+ <body>
+    <table>
+    <tbody>
+        <tr>
+            <td><center>                   <b>Error Codes</b>                </center></td>
+            <td><center>                   <b>Cause</b>                </center></td>
+            <td><center>                   <b>Workaround</b>                </center></td>
+        </tr>
+        <tr>
+            <td>
+            <ul>
+                <li>Unknown error code : 50009</li>
+            </ul>
+            </td>
+            <td>
+            <p>ISO file placed in the patches folder/ patch store is less than 3 GB for windows 10 x64 bit machine or less than 2 GB for windows 10 x86 bit machine</p>
+            </td>
+            <td>
+            <p>To resolve the issue, Delete the ISO file in the patches folder of client machine and redeploy the feature pack</p>
+            <p>If the size of the ISO file present in the patch store is also lesser than the prescribed size then delete the existing ISO File from the patch store. Then, re-download the ISO file from VLSC or using the media creation tool and rename and copy the ISO file in the patches store and re-deploy the feature pack update.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <ul>
+                <li>
+                <p>Unknown error code : 50001</p>
+                </li>
+                <li>
+                <p>Incorrect Function</p>
+                </li>
+                <li>
+                <p>Unknown error code : 50002</p>
+                </li>
+                <li>
+                <p>Unknown error code : 50004</p>
+                </li>
+                <li>
+                <p>Invalid function</p>
+                </li>
+                <li>
+                <p>The system cannot find the file specified</p>
+                </li>
+            </ul>
+            </td>
+            <td>
+            <p>Corrupted ISO File</p>
+            </td>
+            <td>
+            <p>Delete the existing ISO File from the patch store. Then, re-download the ISO file from&nbsp;<a href="https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0">VLSC</a> or using the media creation tool and rename and copy the ISO file in the patches store and re-deploy the feature pack update.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <ul>
+                <li>
+                <p>Unknown error code : 50003</p>
+                </li>
+            </ul>
+            </td>
+            <td>
+            <p><b>Edition Mismatch</b></p>
+            <p>This error occurs if you have the Enterprise edition of Windows 10 but try to deploy ISO file of other editions.&nbsp;</p>
+            </td>
+            <td>
+            <p>Kindly download and deploy the ISO file that's applicable to your edition.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <ul>
+                <li>
+                <p>Unknown error code : 50006</p>
+                </li>
+                <li>
+                <p>Unknown Error Code : -1047526908</p>
+                </li>
+            </ul>
+            </td>
+            <td>
+            <p><b>Language Mismatch</b></p>
+            <p>This error occurs if you've downloaded the ISO file in a different language than your system's native language.</p>
+            </td>
+            <td>
+            <p>Kindly download the ISO file in your correct applicable language.</p>
+            <p><span>&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <ul>
+                <li>
+                <p>Unknown error code : 50007</p>
+                </li>
+            </ul>
+            </td>
+            <td>
+            <p><b>Version Mismatch</b></p>
+            <p>This issue occurs if you've downloaded the ISO file mismatches with the systems' OS version. Say, You've downloaded the ISO file for Winodws 10 1803 but deploy it to Windows 10 1809&nbsp;</p>
+            </td>
+            <td>
+            <p>To resolve this&nbsp;issue, kindly download the ISO file that's applicable to your OS version.</p>
+            <p><span>&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <ul>
+                <li>
+                <p>Access is denied&nbsp;</p>
+                </li>
+                <li>
+                <p>Unknown error code : 50005</p>
+                </li>
+            </ul>
+            </td>
+            <td>
+            <p>You might have configured GPO / Antivirus / EndPoint Security to block external drives and launching of setup.exe</p>
+            <p>[OR]</p>
+            <p>Access was denied to migrate the data.</p>
+            </td>
+            <td>
+            <p>Follow the below steps to resolve the issue,</p>
+            <ol>
+                <li>
+                <p>Allow external drives mounting and launching of setup.exe in your GPO / Antivirus / EndPoint Security.</p>
+                </li>
+                <li>
+                <p>Make sure that you have given read/write access to the following folders (C:\Users\USERNAME\AppData, C:\Windows\System3 &amp; C:\Apps)</p>
+                </li>
+                <li>
+                <p>Go to C: drive in the file explorer.&nbsp;</p>
+                </li>
+                <li>
+                <p>Click View and check the "Hidden Files" check box.</p>
+                </li>
+                <li>
+                <p>Rename the folder named "$WINDOWS. ~ BT".</p>
+                </li>
+                <li>
+                <p>Re-deploy the feature pack.</p>
+                </li>
+            </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <ul>
+                <li>
+                <p>Unknown error code : 50008</p>
+                </li>
+            </ul>
+            </td>
+            <td>
+            <p><b>Unable to retrieve the mounted drive letter</b></p>
+            <p>You might have configured GPO / Antivirus / EndPoint Security to block powershell commands.</p>
+            </td>
+            <td>
+            <p>Allow powershell commands in the GPO / Antivirus / EndPoint Security and then re-deploy the feature pack.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <ul>
+                <li>
+                <p>Unknown Error code : 183</p>
+                </li>
+                <li>
+                <p>Cannot create a file when that file already exists.</p>
+                </li>
+                <li>
+                <p>The process cannot access the file because it is being used by another process</p>
+                </li>
+                <li>
+                <p>Unknown Error code: -2147023278</p>
+                </li>
+            </ul>
+            </td>
+            <td>
+            <p>Setup.exe might be already running in the background</p>
+            </td>
+            <td>
+            <p>To fix this issue, open Task Manager and check whether the following tasks are running</p>
+            <ol>
+                <li>
+                <p>setup.exe</p>
+                </li>
+                <li>
+                <p>setup host.exe</p>
+                </li>
+                <li>
+                <p>windows installer</p>
+                </li>
+                <li>
+                <p>windows setup</p>
+                </li>
+                <li>
+                <p>Modern setup host</p>
+                </li>
+            </ol>
+            <p>If the any of the above tasks are running, kill the tasks and try deploying the feature pack again.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <ul>
+                <li>
+                <p>Unknown Error Code -1047526904</p>
+                </li>
+            </ul>
+            </td>
+            <td>
+            <p>Incompatible apps present in the system is blocking the upgrade</p>
+            </td>
+            <td>
+            <ol>
+                <li>
+                <p>Navigate to&nbsp;&lt;agent-installed-dir&gt;\logs\panther</p>
+                </li>
+                <li>
+                <p>Open scanresult.xml and Compatdata.xml and search for&nbsp;<b>CompatibilityInfo BlockingType="Hard"</b>.&nbsp;You will be able to find all the incompatible apps installed on the computer.</p>
+                </li>
+            </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <ul>
+                <li>
+                <p>Unknown Error Code : -1047526912</p>
+                </li>
+                <li>
+                <p>Unknown Error Code : -1047526910</p>
+                </li>
+            </ul>
+            </td>
+            <td>
+            <p>Your PC doesn’t meet the minimum requirements to download or install the upgrade to Windows 10</p>
+            </td>
+            <td>
+            <ol>
+                <li>
+                <p>Navigate to &lt;agent-installed-dir&gt;\logs\panther</p>
+                </li>
+                <li>
+                <p>open scanresult.xml and Compatdata.xml and search for&nbsp;<b>CompatibilityInfo BlockingType="Hard"</b>. You will be able to find which system requirement is not satisfied</p>
+                </li>
+                <li>
+                <p>"<b>Setup_InsufficientSystemPartitionDiskSpace</b>" indicates "Your system reserved partition does not have enough space for the upgrade", So extend the system reserved partition space.</p>
+                </li>
+                <li>
+                <p>"<b>Setup_HostIsBootedFromVHD</b>" indicates "Your Operating system running in the native Boot VHD (Virtual Hard Disk) where OS upgradation is not possible".</p>
+                </li>
+                <li>
+                <p>"<b>Setup_PendingFirmwareUpdateWithPower</b>"  - If a firmware update is pending because of power this error may occur, Update the firmware and then deploy feature pack</p>
+                </li>
+                <li>
+                <p><a href="https://www.microsoft.com/en-IN/windows/windows-10-specifications">Learn more about the minimum requirements for Windows 10</a></p>
+                </li>
+            </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <ul>
+                <li>
+                <p>Unknown error code : -1047527161</p>
+                </li>
+            </ul>
+            </td>
+            <td>
+            <p>The Unknown error code : -1047527161 (0xC1900107) indicates "A cleanup operation from a previous installation attempt is still pending, and a system restart is required to continue the upgrade."</p>
+            </td>
+            <td>
+            <p><b>Method 1:</b></p>
+            <p>Restart the system and Re-deploy the feature pack update.</p>
+            <p><span>&nbsp;</span></p>
+            <p><b>Method 2:</b></p>
+            <ul>
+                <li>
+                <p>Go to C: drive in the file explorer.&nbsp;</p>
+                </li>
+                <li>
+                <p>Click View and check the "Hidden Files" check box.</p>
+                </li>
+                <li>
+                <p>Rename the folder named "$WINDOWS. ~ BT".</p>
+                </li>
+                <li>
+                <p>Perform Disk Cleanup. Refer :&nbsp;<a href="https://support.microsoft.com/en-in/help/4026616/windows-10-disk-cleanup">https://support.microsoft.com/en-in/help/4026616/windows-10-disk-cleanup</a></p>
+                </li>
+                <li>
+                <p>Re-deploy the feature pack update</p>
+                </li>
+            </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <ul>
+                <li>
+                <p>%1 is not a valid Win32 application</p>
+                </li>
+            </ul>
+            </td>
+            <td>
+            <p>This error occurs when you have deployed the dependency patch of feature pack.</p>
+            </td>
+            <td>
+            <p>Scan the systems and check the missing patches list. Deploy the patch where its description starts with "Feature Pack Update".</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <ul>
+                <li>
+                <p>Unable to download the dependency file from the server</p>
+                </li>
+            </ul>
+            </td>
+            <td>
+            <p>There might be connectivity issue between server and agent</p>
+            </td>
+            <td>
+            <ol>
+                <li>
+                <p>Re-deploy the feature pack update.</p>
+                </li>
+                <li>
+                <p>If still problem persists,&nbsp;<a href="https://www.manageengine.com/patch-management/support.html">contact support</a></p>
+                </li>
+            </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <ul>
+                <li>
+                <p>Unknown Error Code -2147010798</p>
+                </li>
+            </ul>
+            </td>
+            <td>
+            <p>A file needed by Windows Update is likely damaged or missing</p>
+            </td>
+            <td>
+            <p>Try repairing your system files,</p>
+            <ol>
+                <li>
+                <p>Open an elevated command prompt</p>
+                </li>
+                <li>
+                <p>Copy and paste the below command 					 <br>
+                <span class="zw-br">DISM.exe /Online /Cleanup-image /Restorehealth&nbsp;</span> 					 <br>
+                and hit enter.</p>
+                </li>
+                <li>
+                <p>Re-deploy the feature pack update</p>
+                </li>
+            </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <ul>
+                <li>
+                <p>Unknown Error Code : -1047527167</p>
+                </li>
+            </ul>
+            </td>
+            <td>
+            <p>A driver has caused a problem.</p>
+            </td>
+            <td>
+            <ol>
+                <li>
+                <p>Disable or remove all 3rd party antivirus or antispyware from your system. Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.</p>
+                </li>
+                <li>
+                <p>Update installed drivers.</p>
+                </li>
+                <li>
+                <p>Re-deploy the feature pack</p>
+                </li>
+            </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <ul>
+                <li>
+                <p>Unknown Error. Code : -1047526941</p>
+                </li>
+                <li>
+                <p>Unknown Error. Code : -1047526940</p>
+                </li>
+                <li>
+                <p>Unknown Error. Code : -1047526939</p>
+                </li>
+                <li>
+                <p>Unknown Error. Code : -1047526942</p>
+                </li>
+            </ul>
+            </td>
+            <td>
+            <p>A preinstall script failed to execute or returned an error.</p>
+            </td>
+            <td>
+            <p>You are using Custom Script that can set up a few things right along with the installation. These scrips can install software, apply group policy, and so on. If you are receiving any of these error codes, then there is a problem with the script.&nbsp;</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p></p><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Also, Refer the official Microsoft documents attached below:</p>
+<p><a href="https://support.microsoft.com/en-in/help/10587/windows-10-get-help-with-upgrade-installation-errors">https://support.microsoft.com/en-in/help/10587/windows-10-get-help-with-upgrade-installation-errors</a></p>
+<p><a href="https://docs.microsoft.com/en-us/windows/deployment/upgrade/resolution-procedures">https://docs.microsoft.com/en-us/windows/deployment/upgrade/resolution-procedures</a></p>
+ 
+ <a href="index.html"> Main page</a><br>
+ </body></html>
