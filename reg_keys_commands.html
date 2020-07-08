@@ -3,39 +3,39 @@
 <title>Some useful Registry keys</title>
 </head>
 <body>
-<b>Find device id on a machine:</b>
-<b></b>
-<b>HKLM\Software\Verismic\PowerManager\DeviceID</b>
-<b></b>
-<b>Gathering inventory from:</b>
-<b></b>
-<b>HKEY_USERS\.DEFAULT\</b>
-<b>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall</b>
-<b>HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall</b>
-<b>HKEY_USERS\S-1-5-19\...</b>
-<b>HKEY_USERS\S-1-5-20\</b>
-<b>HKEY_USERS\S-1-5-21-3884730205-1340584569-2937958712-2647\</b>
-<b>HKEY_USERS\S-1-5-80-1549978933-2891762758-2075524219-3728768389-1145206490\</b>
-<b>HKEY_USERS\S-1-5-80-1625532266-625503396-2441596095-4129757946-3375356652\</b>
-<b>HKEY_USERS\S-1-5-80-2652535364-2169709536-2857650723-2622804123-1107741775\</b>
-<b>HKEY_USERS\S-1-5-80-2872255330-672591203-888807865-2791174282-1554802921\</b>
-<b>HKEY_USERS\S-1-5-80-2885764129-887777008-271615777-1616004480-2722851051\</b>
-<b>HKEY_USERS\S-1-5-80-3263513310-3392720605-1798839546-683002060-3227631582\</b>
-<b>HKEY_USERS\S-1-5-80-3477044410-376262199-2110164357-2030828471-4165405235\...</b>
-<b></b>
-<b>To export them:</b>
-<b>cmd /c reg export "HKEY_USERS\S-1-5-21-3884730205-1340584569-2937958712-2647\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall" "C:\$Vcmstemp$\Zendesk_us21.reg"</b>
-<b>cmd /c reg export "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall" "C:\$Vcmstemp$\Zendesk_Uninstall.reg"</b>
-<b>cmd /c reg export "HKEY_USERS" "C:\hkey.reg"</b>
-<b></b>
-<b>Command to see if there is any corrupted windows components:</b>
-<b>cmd /c DISM /Online /Cleanup-Image /Scanhealth > c:\$VcmsTemp$\logs\dismhealth.log</b>
-<b>FYI - the process can last around 15 mins, so please while it checks everything </b>
-<b></b>
-<b>cmd /c del "C:\$Vcmstemp$\Logs\*.*" /F /Q - to clear all data in logs</b>
-<b></b>
-<b></b>
-<b>cmd /c reg export "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing" "C:\$Vcmstemp$\Zendesk_Ticket_17226_Component_Based_Servicing_23Jan2020.reg"</b>
-<b>cmd /c reg export "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate" "C:\$Vcmstemp$\Zendesk_Ticket_17226_Windows_Update_23Jan2020.reg"</b>
+<b>Find device id on a machine:</b><br>
+<b></b><br>
+<b>HKLM\Software\Verismic\PowerManager\DeviceID</b><br>
+<b></b><br>
+<b>Gathering inventory from:</b><br>
+<b></b><br>
+<b>HKEY_USERS\.DEFAULT\</b><br>
+<b>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall</b><br>
+<b>HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall</b><br>
+<b>HKEY_USERS\S-1-5-19\...</b><br>
+<b>HKEY_USERS\S-1-5-20\</b><br>
+<b>HKEY_USERS\S-1-5-21-3884730205-1340584569-2937958712-2647\</b><br>
+<b>HKEY_USERS\S-1-5-80-1549978933-2891762758-2075524219-3728768389-1145206490\</b><br>
+<b>HKEY_USERS\S-1-5-80-1625532266-625503396-2441596095-4129757946-3375356652\</b><br>
+<b>HKEY_USERS\S-1-5-80-2652535364-2169709536-2857650723-2622804123-1107741775\</b><br>
+<b>HKEY_USERS\S-1-5-80-2872255330-672591203-888807865-2791174282-1554802921\</b><br>
+<b>HKEY_USERS\S-1-5-80-2885764129-887777008-271615777-1616004480-2722851051\</b><br>
+<b>HKEY_USERS\S-1-5-80-3263513310-3392720605-1798839546-683002060-3227631582\</b><br>
+<b>HKEY_USERS\S-1-5-80-3477044410-376262199-2110164357-2030828471-4165405235\...</b><br>
+<b></b><br>
+<b>To export them:</b><br>
+<b>cmd /c reg export "HKEY_USERS\S-1-5-21-3884730205-1340584569-2937958712-2647\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall" "C:\$Vcmstemp$\Zendesk_us21.reg"</b><br>
+<b>cmd /c reg export "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall" "C:\$Vcmstemp$\Zendesk_Uninstall.reg"</b><br>
+<b>cmd /c reg export "HKEY_USERS" "C:\hkey.reg"</b><br>
+<b></b><br>
+<b>Command to see if there is any corrupted windows components:</b><br>
+<b>cmd /c DISM /Online /Cleanup-Image /Scanhealth > c:\$VcmsTemp$\logs\dismhealth.log</b><br>
+<b>FYI - the process can last around 15 mins, so please while it checks everything </b><br>
+<b></b><br>
+<b>cmd /c del "C:\$Vcmstemp$\Logs\*.*" /F /Q - to clear all data in logs</b><br>
+<b></b><br>
+<b></b><br>
+<b>cmd /c reg export "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing" "C:\$Vcmstemp$\Zendesk_Ticket_17226_Component_Based_Servicing_23Jan2020.reg"</b><br>
+<b>cmd /c reg export "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate" "C:\$Vcmstemp$\Zendesk_Ticket_17226_Windows_Update_23Jan2020.reg"</b><br>
 </b></body>
 </html>
