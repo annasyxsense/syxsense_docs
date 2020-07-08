@@ -3,21 +3,21 @@
 <title>Information for Content team</title>
 </head>
 <body>
-In order to forward ticket to Content team,follow these steps.
+<p>In order to forward ticket to Content team,follow these steps.</p>
 
-1. Ask customer to try to install patch manually from Downloadfolder
-If installation was successful, but in console it failed:
+<p>1. Ask customer to try to install patch manually from Downloadfolder
+If installation was successful, but in console it failed:</p>
 
-2. Grab export registry files, to do this, go to: 
-Process Viewer, enter the following commands, with corresponding descriptions into Process Viewer field. 
+<p>2. Grab export registry files, to do this, go to: </p>
+Process Viewer, enter the following commands, with corresponding descriptions into Process Viewer field. </p>
 
-cmd /c reg export "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" "C:\$Vcmstemp$\Zendesk_Ticket_18815_Windows_NT_CurrentVersion.reg"
+<p>cmd /c reg export "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" "C:\$Vcmstemp$\Zendesk_Ticket_18815_Windows_NT_CurrentVersion.reg"</p>
 
-cmd /c reg export HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\SideBySide\Winners "C:\$Vcmstemp$\Zendesk_Ticket_18815_Windows_CurrentVersion_SidebySide_Winners.reg"
+<p>cmd /c reg export HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\SideBySide\Winners "C:\$Vcmstemp$\Zendesk_Ticket_18815_Windows_CurrentVersion_SidebySide_Winners.reg"</p>
 
-Untick "Allow user interaction" (Run on desktop) - this hides the initial process. 
+<p>Untick "Allow user interaction" (Run on desktop) - this hides the initial process. </p>
 
-Click Run
+<p>Click Run</p>
 </body>
 </html>
 
