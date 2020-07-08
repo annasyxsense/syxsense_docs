@@ -3,7 +3,7 @@
 <title>Basic Linux commands which we use</title>
 </head>
 <body>
-<h1>UBUNTU</h1>
+<h2>UBUNTU</h2>
 cat /etc/os-release - returns information on OS installed on a device
 locale - returns info on configured language settings
 hostname - returns the name which was set on a PC, Not FQDN (for LQDN need to add flag -f)
@@ -13,14 +13,14 @@ ifconfig - utility which allows to manage network interface configurations
 cat /proc/version - returns version of Ubuntu and core installedm date when it was installed
 ip route | grep default - returns the default ip route from ip route table
 
-<h2>UBUNTU additionall commands</h2>
+<h3>UBUNTU additionall commands</h3>
 These commands can be useful:
 touch /path/file - creates file in in specified directory
 locale -a - display the available locales
 locale-gen fr_FR.UTF-8 - if locale doesn't appear in list, it should be installed additionally
 dpkg -l - returns the list of all packages
 
-<h1>SUSE</h1>
+<h2>SUSE</h2>
 cat /etc/os-release
 locale
 hostname
@@ -30,7 +30,7 @@ uname -m
 cat /sys/devices/virtual/dmi/id/sys_vendor
 cat /sys/devices/virtual/dmi/id/product_name
 
-<h1>REDHAT/Oracle 7 or greater</h1>
+<h2>REDHAT/Oracle 7 or greater</h2>
 cat /etc/os-release
 lsb_release -a
 locale
@@ -44,7 +44,7 @@ systemctl status sshd - checks the stae of ssh,  if the port was not open, you w
 firewall-cmd --list-all - to check the current active zones and their open ports and services.
 
 
-<h1>REDHAT/Oracle 6</h1>
+<h2>REDHAT/Oracle 6</h2>
 lsb_release -a
 locale
 hostname
@@ -53,7 +53,7 @@ dmidecode | grep -A3 '^System Information'
 ip addr show
 cat /proc/version
 
-<h1>AmazonLinux (AMI)</h1>
+<h2>AmazonLinux (AMI)</h2>
 cat /etc/os-release
 locale
 hostname
@@ -63,7 +63,7 @@ cat /proc/version
 cat /sys/devices/virtual/dmi/id/sys_vendor
 cat /sys/devices/virtual/dmi/id/product_name
 
-<h1>Generic Linux (Fallback)</h1>
+<h2>Generic Linux (Fallback)</h2>
 cat /etc/os-release
 locale
 hostname
@@ -73,7 +73,7 @@ cat /proc/version
 cat /sys/devices/virtual/dmi/id/sys_vendor
 cat /sys/devices/virtual/dmi/id/product_name
 
-<h1>All Linux</h1>
+<h2>All Linux</h2>
 cat /etc/verismic - returns the device ID of a device
 df - report file system disk space usage
 echo xxxxxx | sudo tee /etc/verismic
