@@ -1,24 +1,18 @@
 <html>
 <head>
-<title>Steps to deploy Office 365</title>
+<title><h2>Steps to deploy Office 365</h2></title>
 </head>
 <body>
-User should have 
-I have the installation files using the Office Deployment Tool. But how do i upload these in one application? 
- At the moment, it contains the setup.exe a load of cab/xml files
- 
- It is a little bit trickier but you can zip all of those files up and upload the zip file. During the application creation process you choose the zip file as the install package and it will
-allow you to choose the file that will be executed when the zip file unzips during deployment.
-The problem arises with the setup.exe, you cannot specify the command line install arguments so that installation will not be silenced.
-To work around this, it would be best to also create a batch file with installation arguments and have that batch file be the file that executes.
-
-So you would have your cab/xml files, the setup.exe and a batch file zipped up. During deployment the zip file will be downloaded and unzipped.
-CMS will execute the batch file, which will simply execute the setup file with silent install arguments plus any additional arguments needed such as licensing information.
-
-Regards,
-
-<a href="index.html"> Main</a><br>
-
+<p>User should:</p>
+ <p>1. Receive installation files, from Office Deployment tool(setup and load of cab/xml files)</p>
+ <p>2. Create a script/bat file with install arguments to run setup.exe silently.</p>
+ <p>3. Zip all received files and upload it to Applications.</p>
+ <p>4. Choose as executable bat file in a zip while uploading.</p>
+<p></p>
+ <p>As a result Console execute bat file, which all arguments and additional info.</p>
+<p></p>
+<p><a href="index.html"> Main</a></p>
+<p></p>
 </body>
 </html>
 
