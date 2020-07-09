@@ -1,0 +1,10 @@
+$ bundle install
+> Fetching gem metadata from https://rubygems.org/............
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies...
+. . .
+Installing minima 1.0.1
+Using bundler 1.10.6
+Bundle complete! 2 Gemfile dependencies, 54 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
