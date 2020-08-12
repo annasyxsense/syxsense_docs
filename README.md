@@ -1,9 +1,9 @@
-##Syxsense Technical Support Documentation
+## Syxsense Technical Support Documentation
 
-###Some useful links and descriptions are going to be added here as an attempt to gather in one place useful and up-to date information
-###regarding recently added features, workarounds or specification about Syxsense.
+Some useful links and descriptions are going to be added here as an attempt to gather in one place useful and up-to date information
+regarding recently added features, workarounds or specification about Syxsense.
 
-###All efforts are greatly appreciated!
+All efforts are greatly appreciated!
 
 Link to [Main!](http://index.md)
 
